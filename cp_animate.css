@@ -43,6 +43,15 @@ video {
 	animation: spin 4s linear infinite;
 }
 
+input#rotateVideo:checked-video {
+	animation-play-state: running;
+}
+
+input#rotateVideo:not(:checked)~video {
+	animation-play-state: paused; 
+}
+
+
 
 /* Animation Icon Styles */
 
