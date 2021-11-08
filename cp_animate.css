@@ -55,5 +55,14 @@ input#rotateVideo:not(:checked)~video {
 
 /* Animation Icon Styles */
 
+input#rotateVideo {
+	display: none; 
+}
 
+input#rotateVideo:not(:checked)+label::after {
+	content: "\21bb"; 
+}
 
+input#rotateVideo:checked+label::after {
+	content: "\270b"; 
+}
